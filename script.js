@@ -11,6 +11,9 @@ const specialChar = ["!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "_", "+",
 var effectArray = [];
 var costumerArray = [];
 
+//The popup display has been created setting the password's lenght within 8 and 128
+var numCharacter = prompt ("Enter the lenght of your password between 8 and 128");
+
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
