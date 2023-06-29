@@ -20,6 +20,13 @@ var smallLetters = confirm ("Include small letters on Password?");
 var capitalLetters = confirm ("Include CAPITAL LETTERS on Password?");
 var specialChars = confirm ("Include $peci@l Ch@r@cters on Password?");
 
+// Conditioning of the variables array
+if (numerals){ effectArray = effectArray.concat(numeral);}
+if (smallLetters){  effectArray = effectArray.concat(smallLetter);}
+if (capitalLetters){  effectArray = effectArray.concat(capitalLetter);}
+if (specialChars){  effectArray = effectArray.concat(specialChar);}
+console.log(effectArray)
+
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
