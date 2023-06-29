@@ -14,6 +14,12 @@ var costumerArray = [];
 //The popup display has been created setting the password's lenght within 8 and 128
 var numCharacter = prompt ("Enter the lenght of your password between 8 and 128");
 
+// Asking the employee the options of the password
+var numerals = confirm ("Include NUMBERS on Password?");
+var smallLetters = confirm ("Include small letters on Password?");
+var capitalLetters = confirm ("Include CAPITAL LETTERS on Password?");
+var specialChars = confirm ("Include $peci@l Ch@r@cters on Password?");
+
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
