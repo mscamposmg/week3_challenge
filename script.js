@@ -27,6 +27,13 @@ if (capitalLetters){  effectArray = effectArray.concat(capitalLetter);}
 if (specialChars){  effectArray = effectArray.concat(specialChar);}
 console.log(effectArray)
 
+// generate a randomic sequence password
+for (var i = 0; i < numCharacter; i++) {
+  costumerArray.push (effectArray[Math.floor(Math.random() * effectArray.length)]);
+  }
+  return costumerArray.join("") ;
+}
+
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
